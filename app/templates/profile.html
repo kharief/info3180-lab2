@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+  <div class="profile-header">
+    <img src="{{ url_for('static', filename='images/profile_picture.png') }}" alt="Profile Picture" class="profile-picture">
+    <h1>Kharief Marson</h1>
+    <p class="username">@kmarson</p>
+    <p class="location">MontegoBay, Jamaica</p>
+    <p>Date Joined: {{ date_joined }}</p>
+  </div>
+  <div class="profile-bio">
+    <p>I am a skilled and passionate individual with a keen interest in video games and coding. My enthusiasm for technology and game development drives me to create innovative experiences.</p>
+  </div>
+  <div class="profile-stats">
+    <div class="stat">
+      <span class="number">3</span>
+      <span class="stat-name">Posts</span>
+    </div>
+    <div class="stat">
+      <span class="number">110</span>
+      <span class="stat-name">Following</span>
+    </div>
+    <div class="stat">
+      <span class="number">190</span>
+      <span class="stat-name">Followers</span>
+    </div>
+  </div>
+  <button class="follow-button">Follow</button>
+</div>
+{% endblock %}
